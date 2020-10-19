@@ -6,7 +6,7 @@ class Workflow extends Component {
         this.state = {  }
     }
     render() { 
-        return <div>Workflow...</div>;
+        return <h1>Workflow...</h1>;
     }
 }
  
