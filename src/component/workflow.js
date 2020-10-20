@@ -4,7 +4,7 @@ export default class Workflow extends Component {
   // First
   constructor() {
     super();
-    this.state = {};
+    this.state = { pageTitle: 'Workflow' };
     console.log("constructor");
   }
 
@@ -57,7 +57,7 @@ export default class Workflow extends Component {
     return (
       <div>
         <h1>Workflow</h1>
-
+        {this.state.pageTitle} <br />
         <input type="text" onKeyUp={(e) => this.handleKeyUp(e)} />
         <button onClick={this.handleClick}>Click Me</button>
       </div>
